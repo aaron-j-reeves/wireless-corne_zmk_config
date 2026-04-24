@@ -49,5 +49,5 @@ jobs:
           fi
 
           git add --all firmware
-          git commit -m "chore: update firmware artifacts for ${GITHUB_SHA}" -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+          git commit -m "chore: update firmware artifacts for ${GITHUB_SHA}"
           git push origin "HEAD:${BRANCH_NAME}"
