@@ -59,14 +59,14 @@
         pr1: p1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp A &kp Z &kp Q &kp N1 &kp D &kp B &kp POUND &kp LT &kp COMMA &kp LBKT &kp I>;
+            bindings = <&kp COLON &kp K &kp O &kp N8 &kp LS(S) &kp EXCL &kp LS(P) &kp LS(C) &kp AT &kp TILDE &kp UNDER &kp LBKT>;
             label = "P1";
         };
 
         pr2: p2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp LS(C) &kp LS(H) &kp V &kp LS(P) &kp LS(Q) &kp EXCL &kp LS(N) &kp LS(M) &kp LS(L) &kp E &kp LS(B)>;
+            bindings = <&kp Y &kp LS(O) &kp LS(A) &kp LT &kp GT &kp N5 &kp U &kp P &kp LS(R) &kp LS(K) &kp N4 &kp D>;
             label = "P2";
         };
 
@@ -87,14 +87,14 @@
         wa1: wa1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp U &kp LBRC &kp O &kp COLON &kp LS(C) &kp AT &kp R &kp S &kp DOT &kp LS(L) &kp LS(I) &kp Q>;
+            bindings = <&kp LS(V) &kp N7 &kp LS(S) &kp N8 &kp P &kp N9 &kp LS(Y) &kp LS(T) &kp LBKT &kp A &kp LS(E) &kp LS(Q)>;
             label = "WA1";
         };
 
         wa2: wa2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp MINUS &kp N3 &kp LS(L) &kp DOT &kp LS(Z) &kp PLUS &kp LS(X) &kp LS(D) &kp I &kp LS(Y) &kp S>;
+            bindings = <&kp LS(A) &kp DOT &kp LS(Y) &kp LS(A) &kp COLON &kp STAR &kp LS(Y) &kp LS(S) &kp LT &kp LS(O) &kp SQT &kp STAR>;
             label = "WA2";
         };
     };
@@ -133,17 +133,17 @@
             bindings = <
 &kp LS(UP)                   &kp HOME      &kp LC(LEFT)      &kp UP        &kp LC(RIGHT)      &kp END          &msc SCRL_UP                  &msc SCRL_LEFT  &mmv MOVE_UP                   &msc SCRL_RIGHT  &mkp MB5              &kp DEL
 &kp LS(LA(LC(RIGHT_ARROW)))  &kp LS(LEFT)  &kp LEFT          &kp DOWN      &kp RIGHT          &kp LS(RIGHT)    &msc SCRL_DOWN                &mmv MOVE_LEFT  &mmv MOVE_DOWN                 &mmv MOVE_RIGHT  &mkp MB4              &trans
-&kp LS(LC(LA(LEFT)))         &kp LS(HOME)  &kp LS(LC(LEFT))  &kp LS(DOWN)  &kp LS(LC(RIGHT))  &kp LS(END)      &kp LG(R)                     &mkp LCLK       &mkp MCLK                      &mkp RCLK        &kp LS(LC(LA(APOS)))  &trans
+&kp LS(LC(LA(LEFT)))         &kp LS(HOME)  &kp LS(LC(LEFT))  &kp LS(DOWN)  &kp LS(LC(RIGHT))  &kp LS(END)      &kp LG(R)                     &mkp LCLK       &mkp MCLK                      &mkp RCLK        &kp LS(LC(LA(APOS)))  &sk LA(LC(LEFT_SHIFT))
                                                              &kp PAGE_UP   &kp PAGE_DOWN      &trans           &kp LS(LC(LA(LEFT_BRACKET)))  &trans          &kp LS(LC(LA(RIGHT_BRACKET)))
             >;
         };
 
         func {
             bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &kp LS(LC(Y))  &kp LS(LC(U))  &kp LS(LC(I))      &kp LS(LC(O))       &kp LS(LC(P))      &studio_unlock
-&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &kp LS(LC(H))  &kp LS(LC(J))  &kp LS(LC(K))      &kp LS(LC(L))       &kp LS(LC(COLON))  &trans
-&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &kp LS(LC(N))  &kp LS(LC(M))  &kp LS(LC(COMMA))  &kp LS(LC(PERIOD))  &kp LS(LC(FSLH))   &kp LS(LC(BSLH))
-                        &trans  &trans  &trans     &trans         &trans         &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &kp LS(LC(Y))  &kp LS(LC(U))  &kp LS(LC(I))             &kp LS(LC(O))       &kp LS(LC(P))      &kp LS(LC(BACKSPACE))
+&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &kp LS(LC(H))  &kp LS(LC(J))  &kp LS(LC(K))             &kp LS(LC(L))       &kp LS(LC(COLON))  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &kp LS(LC(N))  &kp LS(LC(M))  &kp LS(LC(COMMA))         &kp LS(LC(PERIOD))  &kp LS(LC(FSLH))   &kp LS(LC(BSLH))
+                        &trans  &trans  &trans     &trans         &trans         &kp LS(LC(SINGLE_QUOTE))
             >;
         };
 
@@ -158,10 +158,10 @@
 
         utl {
             bindings = <
-&studio_unlock  &none         &none         &none         &none         &bt BT_CLR_ALL    &kp LS(LC(Y))  &kp LS(LC(U))  &kp LS(LC(I))      &kp LS(LC(O))       &kp LS(LC(P))      &studio_unlock
-&trans          &none         &out OUT_USB  &out OUT_TOG  &out OUT_BLE  &none             &kp LS(LC(H))  &kp LS(LC(J))  &kp LS(LC(K))      &kp LS(LC(L))       &kp LS(LC(COLON))  &trans
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp LS(LC(N))  &kp LS(LC(M))  &kp LS(LC(COMMA))  &kp LS(LC(PERIOD))  &kp LS(LC(SLASH))  &bootloader
-                                            &none         &trans        &none             &none          &trans         &soft_off
+&studio_unlock  &none         &none         &none         &none         &bt BT_CLR_ALL    &kp LS(LC(LA(Y)))  &kp LS(LC(LA(U)))  &kp LS(LC(LA(I)))      &kp LS(LC(LA(O)))       &kp LS(LC(LA(P)))      &studio_unlock
+&trans          &none         &out OUT_USB  &out OUT_TOG  &out OUT_BLE  &none             &kp LS(LC(LA(H)))  &kp LS(LC(LA(J)))  &kp LS(LC(LA(K)))      &kp LS(LC(LA(L)))       &kp LS(LC(LA(COLON)))  &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp LS(LC(LA(N)))  &kp LS(LC(LA(M)))  &kp LS(LC(LA(COMMA)))  &kp LS(LC(LA(PERIOD)))  &kp LS(LC(LA(SLASH)))  &bootloader
+                                            &none         &trans        &none             &none              &trans             &soft_off
             >;
         };
 
